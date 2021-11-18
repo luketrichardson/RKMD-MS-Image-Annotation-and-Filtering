@@ -247,4 +247,4 @@ if __name__ == '__main__':
     xt, yt = find_max_coordinates(master_annotation_dict)
     max_ppm_error = 2.5 # Set the maximum allowable ppm error for any annotated feature.
 
-    batch_process(master_annotation_dict, batch_params, (xt,yt), save_dir, max_ppm_error)
+    batch_process(master_annotation_dict, batch_params, (xt+1,yt+1), save_dir, max_ppm_error)
